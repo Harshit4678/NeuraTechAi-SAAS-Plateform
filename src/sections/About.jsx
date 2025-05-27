@@ -26,7 +26,7 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
         >
-          About <span className="text-blue-600">NeuraTech AI</span>
+          About <span className="text-blue-600">MindForge AI</span>
         </Motion.h2>
 
         {/* Paragraph */}
@@ -39,7 +39,7 @@ export default function About() {
           We’re a passionate team building smart tools for the future. With{" "}
           <span className="text-blue-600 font-semibold">AI</span> and{" "}
           <span className="text-blue-600 font-semibold">automation</span> at the
-          core, NeuraTech AI empowers businesses to unlock{" "}
+          core, MindForge AI empowers businesses to unlock{" "}
           <span className="text-blue-600 font-semibold">productivity</span> like
           never before.
         </Motion.p>

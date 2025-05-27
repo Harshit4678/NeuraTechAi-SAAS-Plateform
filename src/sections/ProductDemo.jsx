@@ -35,7 +35,7 @@ export default function ProductDemo() {
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold text-gray-800 mb-8"
         >
-          See NeuraTech AI in Action
+          See MindForge AI in Action
         </Motion.h2>
 
         {/* Carousel Container */}
@@ -44,7 +44,7 @@ export default function ProductDemo() {
             key={images[current]}
             src={images[current]}
             alt={`Product Demo ${current + 1}`}
-            className="w-full h-[240px] sm:h-[360px] md:h-[500px] object-cover rounded-xl"
+            className="w-full h-[240px]  md:h-[500px] object-cover rounded-xl"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}

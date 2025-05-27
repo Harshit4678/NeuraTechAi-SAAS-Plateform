@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="col-span-2 md:col-span-1 flex flex-col items-center md:items-start">
           <div className="flex items-center gap-2 mb-4 text-blue-400 text-2xl font-bold">
             <FaBrain className="text-blue-500" />
-            NeuraTech AI
+            MindForge AI
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             AI-Powered Productivity Tools.
@@ -102,7 +102,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="mt-10 text-center text-gray-500 text-sm border-t border-gray-700 pt-4">
-        © 2025 NeuraTech AI. All rights reserved.
+        © 2025 MindForge AI. All rights reserved.
       </div>
     </footer>
   );

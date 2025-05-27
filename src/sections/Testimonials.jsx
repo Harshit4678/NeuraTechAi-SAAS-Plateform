@@ -3,7 +3,7 @@ import { motion as Motion } from "framer-motion";
 const testimonials = [
   {
     name: "Priya Sharma",
-    text: "NeuraTech AI boosted our productivity by 40%! A must-have.",
+    text: "MindForge AI boosted our productivity by 40%! A must-have.",
   },
   {
     name: "Rahul Verma",

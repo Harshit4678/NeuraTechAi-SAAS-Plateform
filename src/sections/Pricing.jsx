@@ -30,7 +30,6 @@ export default function Pricing() {
           Pricing Plans
         </h2>
 
-        {/* Billing Toggle */}
         <div className="flex justify-center items-center mb-10 gap-2">
           <span className={billing === "Monthly" ? "font-semibold" : ""}>
             Monthly
@@ -44,7 +43,7 @@ export default function Pricing() {
                 setBilling(billing === "Monthly" ? "Yearly" : "Monthly")
               }
             />
-            <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 rounded-full peer peer-checked:bg-blue-600 transition"></div>
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-600 transition"></div>
             <span className="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition peer-checked:translate-x-5"></span>
           </label>
           <span className={billing === "Yearly" ? "font-semibold" : ""}>
@@ -52,7 +51,6 @@ export default function Pricing() {
           </span>
         </div>
 
-        {/* Plan Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, i) => (
             <Motion.div
@@ -63,7 +61,7 @@ export default function Pricing() {
               transition={{ duration: 0.4 }}
               viewport={{ once: true }}
               onClick={() => setSelectedPlan(i)}
-              className={`cursor-pointer bg-white p-6 rounded-xl shadow-md transform transition-transform hover:shadow-xl ${
+              className={`cursor-pointer bg-white p-6 rounded-xl shadow-md transition-transform hover:shadow-xl ${
                 selectedPlan === i
                   ? "border-2 border-blue-600 ring-2 ring-blue-100"
                   : "hover:-translate-y-2"

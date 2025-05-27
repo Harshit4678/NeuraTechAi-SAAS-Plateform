@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion as Motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp, FaQuestionCircle } from "react-icons/fa";
+import LottieAnimation from "../components/LottieAnimation";
 
 const faqs = [
   {
-    q: "What is NeuraTech AI?",
-    a: "NeuraTech AI is a cutting-edge productivity suite that leverages artificial intelligence to automate workflows, streamline communication, and supercharge team efficiency.",
+    q: "What is MindForge AI?",
+    a: "MindForge AI is a cutting-edge productivity suite that leverages artificial intelligence to automate workflows, streamline communication, and supercharge team efficiency.",
   },
   {
     q: "Is there a free trial?",
@@ -13,10 +14,10 @@ const faqs = [
   },
   {
     q: "Can I integrate with Slack or Notion?",
-    a: "Yes, NeuraTech AI supports seamless integrations with Slack, Notion, Trello, and more – making your workflows smarter and more connected.",
+    a: "Yes, MindForge AI supports seamless integrations with Slack, Notion, Trello, and more – making your workflows smarter and more connected.",
   },
   {
-    q: "Is my data secure with NeuraTech AI?",
+    q: "Is my data secure with MindForge AI?",
     a: "We take security seriously. Your data is encrypted, and we follow industry best practices to ensure it's safe and secure.",
   },
 ];
@@ -25,23 +26,24 @@ export default function FAQ() {
   const [active, setActive] = useState(null);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white" id="faq">
+    <section className="bg-gradient-to-br from-gray-50 to-white" id="faq">
       <div className="max-w-5xl mx-auto px-4">
-        {/* Icon and Heading */}
         <div className="text-center mb-10">
-          <div className="flex justify-center text-blue-600 text-4xl mb-3">
-            <FaQuestionCircle />
+          <div className="flex justify-center mb-6">
+            <LottieAnimation
+              src="/animations/ai-faqbot.json"
+              className="w-64 h-64 lg:100 lg:100"
+            />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 mt-2 max-w-xl mx-auto">
-            Everything you need to know about NeuraTech AI. Can’t find what
+            Everything you need to know about MindForge AI. Can’t find what
             you’re looking for? Reach out to us.
           </p>
         </div>
 
-        {/* FAQ List */}
         <div className="space-y-4">
           {faqs.map((item, i) => {
             const isActive = active === i;

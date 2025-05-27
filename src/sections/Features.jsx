@@ -1,5 +1,6 @@
 import { motion as Motion } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import LottieAnimation from "../components/LottieAnimation";
 
 const features = [
   {
@@ -12,7 +13,7 @@ const features = [
   },
   {
     title: "Easy Integration",
-    desc: "Connect NeuraTech with your favorite tools.",
+    desc: "Connect MindForge with your favorite tools.",
   },
 ];
 
@@ -28,6 +29,15 @@ export default function Features() {
         >
           Powerful Features Designed for You
         </Motion.h2>
+
+        {/* Lottie Animation added here */}
+        <div className="flex justify-center mt-10">
+          <LottieAnimation
+            src="/animations/ai-assistant.json"
+            className="w-52 h-52"
+          />
+        </div>
+
         <div className="mt-12 grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Motion.div
